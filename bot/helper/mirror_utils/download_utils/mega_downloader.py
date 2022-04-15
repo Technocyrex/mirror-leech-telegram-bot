@@ -1,4 +1,4 @@
-import random
+"""import random
 import string
 
 from os import makedirs
@@ -193,4 +193,4 @@ def add_mega_download(mega_link: str, path: str, listener):
     gid = ''.join(random.SystemRandom().choices(string.ascii_letters + string.digits, k=8))
     mega_listener.setValues(node.getName(), api.getSize(node), gid)
     sendStatusMessage(listener.message, listener.bot)
-    executor.do(api.startDownload, (node, path))
+    executor.do(api.startDownload, (node, path))"""
