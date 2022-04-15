@@ -1,4 +1,4 @@
-from bot.helper.ext_utils.bot_utils import get_readable_file_size,MirrorStatus, get_readable_time
+"""from bot.helper.ext_utils.bot_utils import get_readable_file_size,MirrorStatus, get_readable_time
 from bot import DOWNLOAD_DIR
 
 
@@ -58,4 +58,4 @@ class MegaDownloadStatus:
         return f"{DOWNLOAD_DIR}{self.__uid}"
 
     def download(self):
-        return self.__obj
+        return self.__obj"""
