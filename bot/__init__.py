@@ -51,11 +51,11 @@ try:
     if len(SERVER_PORT) == 0:
         raise KeyError
 except:
-    SERVER_PORT = 80
+    SERVER_PORT = 8221
 
 PORT = environ.get('PORT', SERVER_PORT)
 alive = Popen(["python3", "alive.py"])
-Popen([f"gunicorn web.wserver:app --bind 0.0.0.0:{PORT}"], shell=True)
+Popen([f"gunicorn web.wserver:app --bind 127.0.0.1:{PORT}"], shell=True)
 srun(["qbittorrent-nox", "-d", "--profile=."])
 if not ospath.exists('.netrc'):
     srun(["touch", ".netrc"])
