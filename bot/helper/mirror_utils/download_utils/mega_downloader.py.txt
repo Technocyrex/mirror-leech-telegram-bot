@@ -34,12 +34,10 @@ class MegaAppListener(MegaListener):
 
     @property
     def speed(self):
-        """Returns speed of the download in bytes/second"""
         return self.__speed
 
     @property
     def name(self):
-        """Returns name of the download"""
         return self.__name
 
     def setValues(self, name, size, gid):
